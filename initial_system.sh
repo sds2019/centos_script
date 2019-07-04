@@ -2,6 +2,8 @@
 #!/bin/bash
 yum update -y
 echo "=====================================updated."
+yum install wget -y
+echo "======================================installed: wget"
 yum install vim -y
 echo "alias vi=vim" >> /etc/profile
 yum install gcc -y
