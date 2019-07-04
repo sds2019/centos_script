@@ -1,0 +1,8 @@
+set shiftwidth=4 "这个量是每行的缩进深度，一般设置成和tabstop一样的宽度"
+set tabstop=4 "设置Tab显示的宽度，Python建议设置成4"
+
+"set expandtab
+""如果只想在Python文件中将Tab展开成空格，就改换成下面这句"
+autocmd FileType python set expandtab
+set smartindent
+set autoindent
