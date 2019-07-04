@@ -26,6 +26,8 @@ cd Python-3.7.0
 make;make install
 cd ..
 pip3 install cryptography
+wget https://raw.githubusercontent.com/sds2019/centos_script/master/simple_rmi_for_python
+cat simple_rmi_for_python  >> ~/.vimrc
 echo "===================================python 3 installed"
 yum install perl -y
 echo "=====================================perl  installed"
