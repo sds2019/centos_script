@@ -4,6 +4,16 @@ yum update -y
 echo "=====================================updated."
 yum install wget -y
 echo "======================================installed: wget"
+wget http://arti.shendusou.com:8080/artifactory/libs-release-local/orcale/jdk-8u191-linux-x64.tar.gz
+tar xvfz jdk-8u191-linux-x64.tar.gz
+cp jdk1.8.0_191/ /usr/lib/jvm/ -r
+echo "export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_191" > /etc/profile.d/java.sh
+echo "export PATH=$JAVA_HOME/bin:$PATH" >> /etc/profile.d/java.sh
+echo "export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar" >> /etc/profile.d/java.sh
+chmod 0744 /etc/profile.d/java.sh
+source /etc/profile.d/java.sh
+java -version
+ech "========================================installed: jdk"
 yum install vim -y
 echo "alias vi=vim" >> /etc/profile
 yum install gcc -y
