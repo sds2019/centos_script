@@ -2,6 +2,8 @@
 #!/bin/bash
 yum update -y
 echo "=====================================updated."
+yum install -y rpm-build 
+echo "======================================installed: rpm-build"
 yum install unzip -y
 echo "======================================installed: unzip
 yum install wget -y
