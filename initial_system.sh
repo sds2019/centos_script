@@ -41,6 +41,13 @@ pip3 install cryptography
 wget https://raw.githubusercontent.com/sds2019/centos_script/master/simple_rmi_for_python
 cat simple_rmi_for_python  >> ~/.vimrc
 echo "===================================python 3 installed"
+wget https://files.pythonhosted.org/packages/1d/64/a18a487b4391a05b9c7f938b94a16d80305bf0369c6b0b9509e86165e1d3/setuptools-41.0.1.zip
+unzip setuptools-41.0.1.zip 
+cd setuptools-41.0.1
+python3 setup.py  build
+python3 setup.py install
+cd ..
+echo "=======================================installed: setuptools for python"
 yum install perl -y
 echo "=====================================perl  installed"
 wget http://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
