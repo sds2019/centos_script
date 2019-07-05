@@ -5,7 +5,7 @@ echo "=====================================updated."
 yum install -y rpm-build 
 echo "======================================installed: rpm-build"
 yum install unzip -y
-echo "======================================installed: unzip
+echo "======================================installed: unzip"
 yum install wget -y
 echo "======================================installed: wget"
 wget http://arti.shendusou.com:8080/artifactory/libs-release-local/orcale/jdk-8u191-linux-x64.tar.gz
