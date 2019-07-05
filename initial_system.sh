@@ -31,6 +31,4 @@ cat simple_rmi_for_python  >> ~/.vimrc
 echo "===================================python 3 installed"
 yum install perl -y
 echo "=====================================perl  installed"
-wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
-yum -y install apache-maven
-echo "=====================================maven  installed"
+
