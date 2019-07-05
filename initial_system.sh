@@ -31,4 +31,12 @@ cat simple_rmi_for_python  >> ~/.vimrc
 echo "===================================python 3 installed"
 yum install perl -y
 echo "=====================================perl  installed"
+wget http://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+tar -xvzf apache-maven-3.6.1-bin.tar.gz
+cp apache-maven-3.6.1 /usr/local/lib -r
+echo "#!/bin/bash\nexport M2_HOME=/usr/local/lib/apache-maven-3.6.1\nexport PATH=$PATH:$M2_HOME/bin" > /etc/profile.d/maven.sh
+chmod 0744 /etc/profile.d/maven.sh
+source /etc/profile.d/maven.sh
+mvn -v
+echo "=====================================mvn  installed"
 
