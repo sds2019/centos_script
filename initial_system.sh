@@ -8,7 +8,7 @@ yum install unzip -y
 echo "======================================installed: unzip"
 yum install wget -y
 echo "======================================installed: wget"
-wget http://arti.shendusou.com:8080/artifactory/libs-release-local/orcale/jdk-8u191-linux-x64.tar.gz
+wget http://192.168.18.2:8080/artifactory/libs-release-local/orcale/jdk-8u191-linux-x64.tar.gz
 tar xvfz jdk-8u191-linux-x64.tar.gz
 mkdir -p /usr/lib/jvm/
 cp jdk1.8.0_191/ /usr/lib/jvm/ -r
