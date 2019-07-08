@@ -4,6 +4,8 @@ yum update -y
 echo "=====================================updated.\n\n\n"
 yum install -y rpm-build 
 echo "======================================installed: rpm-build\n\n\n"
+yum install sysstat
+echo "======================================installed: sysstat\n\n\n"
 yum install unzip -y
 echo "======================================installed: unzip\n\n\n"
 yum install wget -y
