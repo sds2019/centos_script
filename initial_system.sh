@@ -10,6 +10,7 @@ yum install wget -y
 echo "======================================installed: wget"
 wget http://arti.shendusou.com:8080/artifactory/libs-release-local/orcale/jdk-8u191-linux-x64.tar.gz
 tar xvfz jdk-8u191-linux-x64.tar.gz
+mkdir -p /usr/lib/jvm/
 cp jdk1.8.0_191/ /usr/lib/jvm/ -r
 echo "export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_191" > /etc/profile.d/java.sh
 echo "export PATH=$JAVA_HOME/bin:$PATH" >> /etc/profile.d/java.sh
