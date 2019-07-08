@@ -1,4 +1,6 @@
 # tested in centos 7.6+
+# copied next command and execute it
+# curl -o https://raw.githubusercontent.com/sds2019/centos_script/master/initial_system.sh;chmod +x initial_system.sh;./initial_system.sh
 #!/bin/bash
 yum update -y
 echo "=====================================updated.\n\n\n"
