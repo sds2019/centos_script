@@ -62,3 +62,6 @@ source /etc/profile.d/maven.sh
 mvn -v
 echo "=====================================mvn  installed"
 
+echo "su cozy source ~/boot.sh" >>/etc/rc.local
+echo "echo HELLO FROM boot.sh" >> /home/cozy/boot.sh
+echo "=====================================cozy initial boot script done."
