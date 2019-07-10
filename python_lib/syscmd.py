@@ -54,7 +54,7 @@ def scp(host,sourcePath,targetPath,options="",get=True,printCmd=True):
                 copiedFileSize=0
                 if get:
                     if sourceFileSize==1:
-                        outputSize=bash("ssh -p "+str(remotePort)+" "+logTargetHost+" ls -l "+sourcePath+" | awk 'NF>4 {print $5}' ",printCmd=False,printOutput=False
+                        outputSize=bash("ssh -p "+str(remotePort)+" "+logTargetHost+" ls -l "+sourcePath+" | awk 'NF>4 {print $5}' ",printCmd=False,printOutput=False）
                         if outputSize is not None:
                             sourceFileSize = int(outputSize)/1024/1024
                         else:
