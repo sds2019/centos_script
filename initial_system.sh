@@ -16,10 +16,10 @@ wget http://192.168.18.2:8080/artifactory/libs-release-local/orcale/jdk-8u191-li
 tar xvfz jdk-8u191-linux-x64.tar.gz
 mkdir -p /usr/lib/jvm/
 cp jdk1.8.0_191/ /usr/lib/jvm/ -r
-echo "JAVA_HOME=/usr/lib/jvm/jdk1.8.0_191" > /etc/profile.d/java.sh
-echo "export JAVA_HOME" > /etc/profile.d/java.sh
-echo "export PATH=$JAVA_HOME/bin:$PATH" >> /etc/profile.d/java.sh
-echo "export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar" >> /etc/profile.d/java.sh
+echo 'JAVA_HOME=/usr/lib/jvm/jdk1.8.0_191' > /etc/profile.d/java.sh
+echo 'export JAVA_HOME' >> /etc/profile.d/java.sh
+echo 'export PATH=$JAVA_HOME/bin:$PATH' >> /etc/profile.d/java.sh
+echo 'export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar' >> /etc/profile.d/java.sh
 chmod 0744 /etc/profile.d/java.sh
 source /etc/profile.d/java.sh
 java -version
