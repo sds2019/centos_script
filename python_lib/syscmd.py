@@ -13,6 +13,8 @@ from datetime import datetime
 import pdb
 
 
+logger = logging.getLogger()
+
 def scp(host,sourcePath,targetPath,options="",get=True,printCmd=True):
     source=sourcePath
     target=targetPath
