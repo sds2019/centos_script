@@ -45,7 +45,9 @@ cd Python-3.7.0
 ./configure
 make;make install
 cd ..
+pip3 install --upgrade pip
 pip3 install cryptography
+pip3 install psutil
 wget https://raw.githubusercontent.com/sds2019/centos_script/master/simple_rmi_for_python
 cat simple_rmi_for_python  >> ~/.vimrc
 echo "===================================python 3 installed\n\n\n"
@@ -61,7 +63,9 @@ echo "=====================================perl  installed"
 wget http://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
 tar -xvzf apache-maven-3.6.1-bin.tar.gz
 cp apache-maven-3.6.1 /usr/local/lib -r
-echo '#!/bin/bash\nexport M2_HOME=/usr/local/lib/apache-maven-3.6.1\nexport PATH=$PATH:$M2_HOME/bin' > /etc/profile.d/maven.sh
+echo '#!/bin/bash' >  /etc/profile.d/maven.sh
+echo 'export M2_HOME=/usr/local/lib/apache-maven-3.6.1'  >> /etc/profile.d/maven.sh
+echo 'export PATH=$PATH:$M2_HOME/bin' >> /etc/profile.d/maven.sh
 chmod 0744 /etc/profile.d/maven.sh
 source /etc/profile.d/maven.sh
 mvn -v
