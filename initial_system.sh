@@ -70,8 +70,12 @@ chmod 0744 /etc/profile.d/maven.sh
 source /etc/profile.d/maven.sh
 mvn -v
 echo "=====================================mvn  installed\n\n\n"
-
+yum install docker-io -y
+systemctl enable docker.service
+systemctl start docker.service
+echo "=====================================docker  installed\n\n\n"
 echo "su cozy source ~/boot.sh" >>/etc/rc.local
 echo "echo HELLO FROM boot.sh" >> /home/cozy/boot.sh
 chown cozy:cozy /home/cozy/boot.sh
 echo "=====================================cozy initial boot script done.\n\n\n"
+
