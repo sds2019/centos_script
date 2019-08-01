@@ -32,9 +32,9 @@ yum install gdb -y
 echo "=====================================gcc gdb g++ installed.\n\n\n"
 wget http://www.roland-riegel.de/nload/nload-0.7.2.tar.gz 
 tar zxvf nload-0.7.2.tar.gz 
-wget http://mirrors.kernel.org/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
-rpm -ivh epel-release-6-8.noarch.rpm
-yum install nload -y
+cd nload-0.7.2
+./configure
+make & make install
 echo "=====================================nload installed.\n\n\n"
 echo "begin to install python 3"
 yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel -y
